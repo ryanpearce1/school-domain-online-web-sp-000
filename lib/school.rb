@@ -16,6 +16,14 @@ class School
     end
   end
   
+  def grade(add_grade)
+    roster[add_grade]
+  end
   
+  def sort 
+    roster.values.each{|names|names.sort!}
+    roster
+  end
+    
   
 end
